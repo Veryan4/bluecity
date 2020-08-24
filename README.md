@@ -8,7 +8,7 @@ docker pull veryan4/bluecity
 docker run -p 80:80 veryan4/bluecity
 ```
 
-You can then visit the application at Visit your http://localhost:80/
+You can then visit the application at http://localhost:80/
 
 
 ### Angular 8
