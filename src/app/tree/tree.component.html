@@ -1,0 +1,25 @@
+<div class="page">
+    <app-sidenav></app-sidenav>
+    <div class="container">
+        <div class="wrap">
+          <div class="row">
+            <div class="col-12">
+              <div id="graph-container"></div>
+            </div>
+          </div>
+          <div class="row" style="padding-top: 20px;">
+            <div class="col-4">
+              <input #commitBox type="text">
+              <button class="btn btn-primary" (click)="commit(commitBox.value)">Commit</button>
+            </div>
+            <div class="col-4">
+              <input #branchBox type="text">
+              <button class="btn btn-primary" (click)="branch(branchBox.value)">Branch</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary" (click)="merge()">Merge</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>  

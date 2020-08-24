@@ -1,0 +1,8 @@
+<div class="sidenav">
+    <h1 (click)="isCollapsed = !isCollapsed">Side Menu</h1>
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
+        <h3 [ngClass]="{'selected': chartIsView}" (click)="switchView('chart')">Chart</h3>
+        <h3 [ngClass]="{'selected': socketIsView}" (click)="switchView('socket')">Socket</h3>
+        <h3 [ngClass]="{'selected': treeIsView}" (click)="switchView('tree')">Tree</h3>
+    </div>
+</div>

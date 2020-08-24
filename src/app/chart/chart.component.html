@@ -1,0 +1,19 @@
+<div class="page">
+    <app-sidenav></app-sidenav>
+    <div class ="container">
+        <div class="wrap" style=" width: 100vw;">
+            <ng-spinner *ngIf="!showChart" size="5" type="border" color="warning"></ng-spinner>
+            <div *ngIf="showChart" style="display: block;width: 100%;">
+                <canvas baseChart 
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [plugins]="barChartPlugins"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType">
+                </canvas>
+              </div>
+        </div>
+    </div>
+</div>
+
